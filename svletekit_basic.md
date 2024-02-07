@@ -4,7 +4,7 @@
 
 # Routing
 
-    - Linked Routes//
+    - Linked Routes
     - Nested Routes
 
 ## Linked Routes
