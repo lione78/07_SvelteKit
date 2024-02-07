@@ -15,16 +15,17 @@
 
     - root
         - src/routes => '/'
+            - http://localhost:5173/+page.svelte 파일에서 요청 처리
     - default
         - 폴더명 구조
     - queryString
         - /path_url?key1=value1&key2=value2
-        - searchParams의 get method 사용하여 값
+        - $page.url.searchParams의 get method 사용하여 값
     - pathParameter
         - 폴더명을 [] 로 감싸 준다.
             - /path_url/path
             - /path_url/[Id](예)
-            - +page.svelte에서 구조 분해 할당으로 값 추출.
+            - $page.params에서 구조 분해 할당으로 값 추출.
 
 ## Nested Routes
 
@@ -50,5 +51,10 @@
         - JS 에서 제공하는 정규식 처리 함수 -> test()
         - match method 파일명을 적용하려는 path parameter 에 적용
             - [userId = integer]
+
+## requestEvent
+
+    - 활용 key
+        - cookies, fetch, params, request, route, url
 
 ## Layout
