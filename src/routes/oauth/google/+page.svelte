@@ -6,6 +6,7 @@
         data-login_uri="http://localhost:5173/oauth/google/info"
         data-auto_prompt="false">
     </div>
+    <!-- data-login_uri : login후 callback url -->
 
     <div class="g_id_signin"
         data-type="standard"
